@@ -21,6 +21,8 @@
 // SOFTWARE.
 
 import RxSwift
+import UIKit
+import ObjectiveC.runtime
 
 public protocol BindView: class {
   associatedtype ViewBinder

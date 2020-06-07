@@ -22,6 +22,7 @@
 
 import RxSwift
 import RxCocoa
+import ObjectiveC.runtime
 
 public protocol ViewBindable: class {
   associatedtype Command
