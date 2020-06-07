@@ -16,7 +16,9 @@ let package = Package(
     targets: [
         .target(
             name: "RxViewBinder",
-            dependencies: ["RxSwift", "RxCocoa"]),
+            dependencies: [
+                .product(name: "RxSwift", package: "RxSwift"),
+                .product(name: "RxCocoa", package: "RxSwift")]),
         .testTarget(
             name: "RxViewBinderTests",
             dependencies: ["RxViewBinder"]),
